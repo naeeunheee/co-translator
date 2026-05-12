@@ -1,0 +1,14 @@
+node_modules/
+dist/
+release/
+.cache/
+.codex/
+.claude/
+.opencode/
+.DS_Store
+*.log
+logs/
+
+.env
+.env.local
+.env.*.local
