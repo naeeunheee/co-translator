@@ -9,6 +9,50 @@ release/
 *.log
 logs/
 
+# Environment files - never commit real secrets
 .env
-.env.local
-.env.*.local
+.env.*
+*.env
+!.env.example
+
+# Local config / credentials
+*.pem
+*.key
+*.p8
+*.p12
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+*.mobileprovision
+*.provisionprofile
+
+# Cloud / deployment local state
+.vercel/
+.netlify/
+.supabase/
+supabase/.branches/
+supabase/.temp/
+
+# Secrets and dumps
+secrets/
+private/
+credentials/
+*.secret
+*.secrets
+*credentials*.json
+*service-account*.json
+*firebase-adminsdk*.json
+
+# Database / export dumps
+*.sql
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+
+# Package manager cache
+.pnpm-store/
+.yarn/cache/
